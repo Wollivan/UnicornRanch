@@ -1,0 +1,9 @@
+@use "../../styles/variables.scss" as v;
+
+.header {
+  border-bottom: 3px solid v.$pink;
+  padding: 1rem;
+  &__title {
+    color: v.$pink;
+  }
+}

@@ -1,0 +1,36 @@
+@use "../../styles/variables.scss" as v;
+.unicorn-list {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 5%;
+
+  &__item {
+    &-name {
+      color: v.$pink;
+    }
+    &-food {
+    }
+    &-colors {
+    }
+    &-location {
+      &-wrap {
+        &-item {
+          border: 1px solid v.$pink;
+          padding: 1rem 2rem;
+          background-color: #fff;
+          margin-right: 0.4rem;
+          &:hover {
+            border: 1px solid v.$light-pink;
+            color: #fff;
+            background-color: v.$light-pink;
+          }
+          &.active {
+            border: 1px solid v.$pink;
+            color: #fff;
+            background-color: v.$pink;
+          }
+        }
+      }
+    }
+  }
+}
